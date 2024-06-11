@@ -1,0 +1,108 @@
+import { Font, StyleSheet } from '@react-pdf/renderer';
+
+// ----------------------------------------------------------------------
+
+Font.register({
+  family: 'Roboto',
+  fonts: [{ src: '/fonts/Roboto-Regular.ttf' }, { src: '/fonts/Roboto-Bold.ttf' }],
+});
+
+const styles = StyleSheet.create({
+  col4: { width: '30%' },
+  col3: { width: '33.33%' },
+  col12: { width: '100%' },
+  col8: { width: '75%' },
+  col6: { width: '50%' },
+  mb4: { marginBottom: 4 },
+  mb8: { marginBottom: 8 },
+  mt16: { marginTop: 16 },
+  mt10: { marginTop: 10 },
+  mb40: { marginBottom: 40 },
+  overline: {
+    fontSize: 9,
+    fontWeight: 800,
+    textTransform: 'uppercase',
+  },
+  textTransformUp: { textTransform: 'uppercase' },
+  h3: { fontSize: 14, fontWeight: 800, textTransform: 'uppercase' },
+  h4: { fontSize: 13, fontWeight: 700 },
+  body1: { fontSize: 9, fontWeight: 400, color: '#666666' },
+  body2: { fontSize: 8, fontWeight: 400 },
+  subtitle1: { fontSize: 9 },
+  subtitle2: { fontSize: 9, fontWeight: 700 },
+  subtitle3: { fontSize: 9, fontWeight: 400 },
+  alignRight: { textAlign: 'right' },
+  alignCenter: { textAlign: 'center' },
+  alignLeft: { textAlign: 'left' },
+  page: {
+    padding: '40px 20px 0 20px',
+    fontSize: 9,
+    lineHeight: 1.6,
+    fontFamily: 'Roboto',
+    backgroundColor: '#fff',
+    textTransform: 'capitalize',
+  },
+  footer: {
+    left: 0,
+    right: 0,
+    bottom: 0,
+    padding: 24,
+    margin: 'auto',
+    // borderTopWidth: 1,
+    // borderStyle: 'solid',
+    position: 'absolute',
+    // borderColor: 'black',
+  },
+  gridContainer: { flexDirection: 'row', justifyContent: 'space-between' },
+  flexContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    flexWrap: 'wrap',
+  },
+  flexEndContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+    flexWrap: 'wrap',
+  },
+  table: { display: 'flex', width: 'auto' },
+  tableHeader: {},
+  tableBody: {},
+  tableRow: {
+    padding: '8px 0',
+    flexDirection: 'row',
+
+  },
+  noBorder: { paddingTop: 8, paddingBottom: 0, borderBottomWidth: 0 },
+  tableCell_1: { width: '5%' },
+  tableHeadCell_1: { width: '5%', textAlign: 'center', margin: 'auto', borderRight: '1px solid white', paddingTop: '5px', backgroundColor: '#d9d9d9' },
+  tableCell_2: { width: '30%', textAlign: 'right' },
+  tableHeadCell_2: { width: '30%', textAlign: 'center', margin: 'auto', borderRight: '1px solid white', paddingTop: '5px', backgroundColor: '#d9d9d9' },
+  tableCell_5: { width: '50%' },
+  tableHeadCell_5: { width: '50%', backgroundColor: '#d9d9d9', borderRight: '1px solid white', textAlign: 'center', margin: 'auto', paddingTop: '5px' },
+  tableCell_4: { width: '75%', textAlign: 'right' },
+  tableCell_3: { width: '25%', textAlign: 'right', border: '1px solid white' },
+  tableHeadCell_3: { width: '25%', textAlign: 'center', borderRight: '1px solid white', backgroundColor: '#d9d9d9', margin: 'auto', paddingTop: '5px' },
+  dottedBorder: { borderStyle: 'dotted', borderWidth: 1, borderColor: 'black' },
+  pd2: { padding: '8px 0' },
+  borderBottom: { borderBottomWidth: 1, borderStyle: 'solid', borderColor: 'black' },
+  mt40: { marginTop: 40 },
+  flexCenter: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'flex-end',
+    flexDirection: 'column',
+  },
+  flexBetween: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    flexDirection: 'row',
+  },
+  alignLeft: { textAlign: 'left' },
+});
+
+export default styles;

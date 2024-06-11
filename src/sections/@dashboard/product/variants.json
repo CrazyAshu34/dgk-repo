@@ -1,0 +1,299 @@
+{
+  "title": "",
+  "description": "",
+  "variants": {
+    "isVariantsAvailable": true,
+    "variantType": [
+      {
+        "title": "size",
+        "options": ["L", "M"],
+        "leadVariant": false
+      },
+      {
+        "title": "color",
+        "options": ["RED", "GREEN"],
+        "leadVariant": true
+      }
+    ]
+  },
+
+  "quantityVariants": {
+    "isQuantityVariantsAvailable": true,
+    "variantType": ["100", "200"]
+  },
+
+  "images": {
+    "baseImages": ["https1", "https2", "https3"],
+    "variantImages": {
+      "isVariantImagesAvailable": true,
+      "variantType": [
+        {
+          "title": "Red",
+          "images": ["https1", "https2", "https3"]
+        },
+        {
+          "title": "Green",
+          "images": ["https1", "https2", "https3"]
+        },
+        {
+          "title": "Blue",
+          "images": ["https1", "https2", "https3"]
+        }
+      ]
+    }
+  },
+
+  "searchListing": {
+    "title": "Product Title",
+    "description": "Product Description",
+    "url": "https://www.example.com",
+    "images": ["https1", "https2", "https3"]
+  },
+
+  "category": ["category1", "category2", "category3"],
+  "subCategory": ["subCategory1", "subCategory2", "subCategory3"],
+  "supSubCategory": ["supSubCategory1", "supSubCategory2", "supSubCategory3"],
+  "brand": "Brand Name",
+
+  "b2c": {
+    "withoutVarientWithoutQuantityVarient": {
+      "costPrice": 100,
+      "mrp": 200,
+      "price": "170",
+      "stock": {
+        "isStockAvailable": true,
+        "stockStatus": "In Stock | out of stock",
+        "quantity": 10
+      }
+    },
+
+    "withVarientwithoutQuantityVarient": [
+      {
+        "costPrice": 100,
+        "mrp": 200,
+        "price": "200",
+        "stock": {
+          "isStockAvailable": true,
+          "stockStatus": "In Stock | out of stock",
+          "quantity": 10
+        },
+        "url": "6568956398569?b2c=true?v1=red&v2=xl&v3=cotton",
+        "variants": [
+          {
+            "title": "color",
+            "value": "red"
+          },
+          {
+            "title": "size",
+            "value": "xl"
+          },
+          {
+            "title": "material",
+            "value": "cotton"
+          }
+        ]
+      }
+    ],
+
+    "withoutVarientwithQuantityVarient": [
+      {
+        "costPrice": 100,
+        "mrp": 200,
+        "price": "200",
+        "stock": {
+          "isStockAvailable": true,
+          "stockStatus": "In Stock | out of stock",
+          "quantity": 10
+        },
+        "quantityPrice": {
+          "isQuantityPriceAvailable": true,
+          "quantityPriceType": [
+            {
+              "quantity": 10,
+              "price": 100,
+              "discountPercentage": "10%"
+            },
+            {
+              "quantity": 20,
+              "price": 90,
+              "discountPercentage": "9%"
+            }
+          ]
+        }
+      }
+    ],
+
+    "withVarientWithQuantityVarient": [
+      {
+        "costPrice": 100,
+        "mrp": 200,
+        "price": "200",
+        "b2cVariant": [
+          {
+            "url": "6568956398569?b2c=true?v1=green&v2=lg",
+            "variants": [
+              {
+                "title": "color",
+                "value": "red"
+              },
+              {
+                "title": "size",
+                "value": "xl"
+              },
+              {
+                "title": "material",
+                "value": "cotton"
+              }
+            ],
+            "stock": {
+              "isStockAvailable": true,
+              "stockStatus": "In Stock | out of stock",
+              "quantity": 10
+            },
+            "basePrice": {
+              "costPrice": 100,
+              "mrp": 200,
+              "Price": 150,
+              "quantityPrice": {
+                "isQuantityPriceAvailable": true,
+                "quantityPriceType": [
+                  {
+                    "quantity": 10,
+                    "price": 100,
+                    "discountPercentage": "10%"
+                  },
+                  {
+                    "quantity": 20,
+                    "price": 90,
+                    "discountPercentage": "9%"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+
+  "b2b": {
+    "withoutVarientWithoutQuantityVarient": {
+      "costPrice": 100,
+      "mrp": 200,
+      "price": "200",
+      "stock": {
+        "isStockAvailable": true,
+        "stockStatus": "In Stock | out of stock",
+        "quantity": 10
+      }
+    },
+
+    "withVarientwithoutQuantityVarient": [
+      {
+        "costPrice": 100,
+        "mrp": 200,
+        "price": "200",
+        "stock": {
+          "isStockAvailable": true,
+          "stockStatus": "In Stock | out of stock",
+          "quantity": 10
+        },
+        "url": "6568956398569?b2c=true?v1=red&v2=xl&v3=cotton",
+        "variants": [
+          {
+            "title": "color",
+            "value": "red"
+          },
+          {
+            "title": "size",
+            "value": "xl"
+          },
+          {
+            "title": "material",
+            "value": "cotton"
+          }
+        ]
+      }
+    ],
+
+    "withoutVarientwithQuantityVarient": [
+      {
+        "costPrice": 100,
+        "mrp": 200,
+        "price": "200",
+        "stock": {
+          "isStockAvailable": true,
+          "stockStatus": "In Stock | out of stock",
+          "quantity": 10
+        },
+        "quantityPrice": {
+          "isQuantityPriceAvailable": true,
+          "quantityPriceType": [
+            {
+              "quantity": 10,
+              "price": 100,
+              "discountPercentage": "10%"
+            },
+            {
+              "quantity": 20,
+              "price": 90,
+              "discountPercentage": "9%"
+            }
+          ]
+        }
+      }
+    ],
+
+    "withVarientWithQuantityVarient": [
+      {
+        "costPrice": 100,
+        "mrp": 200,
+        "price": "200",
+        "b2cVariant": [
+          {
+            "url": "6568956398569?b2c=true?v1=red&v2=xl",
+            "variants": [
+              {
+                "title": "color",
+                "value": "red"
+              },
+              {
+                "title": "size",
+                "value": "xl"
+              },
+              {
+                "title": "material",
+                "value": "cotton"
+              }
+            ],
+            "stock": {
+              "isStockAvailable": true,
+              "stockStatus": "In Stock | out of stock",
+              "quantity": 10
+            },
+            "basePrice": {
+              "costPrice": 100,
+              "mrp": 200,
+              "Price": 150,
+              "quantityPrice": {
+                "isQuantityPriceAvailable": true,
+                "quantityPriceType": [
+                  {
+                    "quantity": 10,
+                    "price": 100,
+                    "discountPercentage": "10%"
+                  },
+                  {
+                    "quantity": 20,
+                    "price": 90,
+                    "discountPercentage": "9%"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
